@@ -1,0 +1,106 @@
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+        &-title {
+            color: $blue;
+            @include worksans (25px);
+            margin-bottom: 20px;
+        }
+        &-wrapper {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-description {
+            color: $red;
+            @include worksans (12px);
+            text-transform: uppercase;
+        }
+        &-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-elem {
+            background-color: #f4fafe;
+            border: 0;
+            width: 100%;
+            margin: 6px 0;
+            padding: 10px;
+            @include worksans (12px);
+            transition: .3s;
+            color: $grey;
+            &:hover,
+            &:focus {
+                transition: .3s;
+                box-shadow: 0 0 4px 0 $blue;
+            }
+            &::placeholder {
+                @include worksans (12px);
+                color: $blue;
+            }
+        }
+        &-button {
+            margin-top: 20px;
+            align-self: center;
+        }
+    }
+    
+    @include media-min(768px) {
+        .form {
+            &-title {
+                @include worksans (30px);
+                margin-bottom: 30px;
+            }
+            &-wrapper {
+                margin-top: 100px;
+            }
+            &-description {
+                @include worksans (14px);
+            }
+            &-inputs {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &-elem {
+                width: 46%;
+                margin: 10px;
+                @include worksans (14px);
+                padding: 10px;
+                &::placeholder {
+                    @include worksans (14px);
+                }
+            }
+            &-textarea {
+                width: 100%;
+            }
+        }
+    }
+    
+    @include media-min(1024px) {
+        .form {
+            &-title {
+                @include worksans (48px);
+                margin-bottom: 50px;
+            }
+            &-wrapper {
+                margin-top: 300px;
+            }
+            &-description {
+                @include worksans (18px);
+            }
+            &-elem {
+                padding: 20px;
+                margin: 10px;
+                @include worksans (18px);
+                &::placeholder {
+                    @include worksans (18px);
+                }
+            }
+            &-button {
+                margin-top: 70px;
+            }
+        }
+    }

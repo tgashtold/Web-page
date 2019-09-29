@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test task</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="#">
+            <img class="header__logo-image" src="styles/images/Logo.png" alt="logo">
+        </a>
+        <div class="header-wrapper content">
+            <div class="header__navigation">
+                <div class="js-humburger humburger">
+                    <div class="humburger-line"></div>
+                </div>
+                <nav class="js-navigation menu-wrapper">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-item__link" href="#">Home.</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__link" href="#">About us.</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__link" href="#">Portfolio.</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__link" href="#">Blog.</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__link" href="#">Contact us.</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <select class="language">
+                    <option class="language-option" value="EN" selected>EN.</option>
+                    <option class="language-option" value="RU">RU.</option>
+                </select>
+                <a class="header-right__btn" href="#">
+                    <span class="header-right__btn-title">Contact Us</span>
+                    <img class="header-right__btn-image" src="styles/images/Arrow.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="swiper-container slider-wrapper">
+        <div class="swiper-wrapper slider">
+
+            <div class="swiper-slide ">
+                <div class="slider-window content">
+                    <div class="slider-info">
+                        <h2 class="slider-head">The Spirit of Digital Agency.</h2>
+                        <p class="slider-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                        <div class="slider-box">
+                            <a class="slider-btn button" href="#">More About us</a>
+                            <a class="slider-link" href="#">Get in Touch.</a>
+                        </div>
+                    </div>
+                    <div class="slider__image-wrapper">
+                        <img class="slider__image" src="styles/images/Vector_Illustration.png" alt="image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide ">
+                <div class="slider-window content">
+                    <div class="slider-info">
+                        <h2 class="slider-head">The Spirit of Digital Agency.</h2>
+                        <p class="slider-description">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                        <div class="slider-box">
+                            <a class="slider-btn button" href="#">More About us</a>
+                            <a class="slider-link" href="#">Get in Touch.</a>
+                        </div>
+                    </div>
+                    <div class="slider__image-wrapper">
+                        <img class="slider__image" src="styles/images/Vector_Illustration.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <main class="main content">
+        <div class="gallery">
+            <h2 class="gallery-head">See some of our <br> Creative work.</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+            <button class="gallery-button">See More of These.</button>
+        </div>
+        <div class="form-wrapper content">
+            <span class="form-description">Contact us</span>
+            <form class="form" action="">
+                <h2 class="form-title">Get in Touch</h2>
+                <div class="form-inputs">
+                    <input class="form-elem" type="email" maxlength="30" placeholder="Your email">
+                    <input class="form-elem" type="text" maxlength="30" placeholder="Subject">
+                    <textarea class="form-elem form-textarea" placeholder="Message here..." cols="40" rows="7"></textarea>
+                </div>
+                <button class="form-button button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content footer-wrapper">
+            <span class="footer-logo">DOOB</span>
+            <p class="footer-elem">CREATIVITY ABOVE</p>
+            <ul class="menu footer-menu">
+                <li class="menu-item">
+                    <a class="menu-item__link footer-menu__link" href="#">Home.</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link footer-menu__link" href="#">About us.</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link footer-menu__link" href="#">Portfolio.</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link footer-menu__link" href="#">Blog.</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-item__link footer-menu__link" href="#">Contact us.</a>
+                </li>
+            </ul>
+            <span class="footer-text">&copy; 2019 - Doob,All Right Reserved</span>
+            <div class="footer-links">
+                <a class="footer-links__item" href="#"><img class="footer-links__img" src="styles/images/Facebook.png" alt="Facebook"></a>
+                <a class="footer-links__item" href="#"><img class="footer-links__img" src="styles/images/Twitter.png" alt="Twitter"></a>
+                <a class="footer-links__item" href="#"><img class="footer-links__img" src="styles/images/Dribble.png" alt="Dribble"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js "></script>
+</body>
+
+</html>

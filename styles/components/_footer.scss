@@ -1,0 +1,118 @@
+.footer {
+    width: 100%;
+    background-color: $blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 20px;
+    margin-top: 15px;
+    &-menu {
+        display: none;
+    }
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    &-logo {
+        @include worksans (12px);
+        text-transform: uppercase;
+    }
+    &-elem {
+        text-transform: uppercase;
+        color: $red;
+        @include worksans (25px);
+        margin: 10px 0 0;
+    }
+    &-text {
+        @include worksans (10px);
+        margin: 15px 0;
+    }
+    &-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &__item {
+            &+& {
+                margin-left: 30px;
+            }
+        }
+        &__img {
+            max-height: 17px;
+            transition: .3s;
+            &:hover {
+                transform: translateY(7px);
+                transition: .3s;
+            }
+        }
+    }
+}
+
+@include media-min(768px) {
+    .footer {
+        margin-top: 30px;
+        padding: 20px 0;
+        &-menu {
+            display: flex;
+            justify-content: center;
+            max-width: 60%;
+            &__link {
+                color: white;
+            }
+            &-logo {
+                @include worksans (14px);
+            }
+            &-elem {
+                @include worksans (30px);
+                margin: 20px 0 30px;
+            }
+            &-text {
+                @include worksans (12px);
+                margin: 25px 0;
+            }
+            &-links {
+                &__item {
+                    &+& {
+                        margin-left: 40px;
+                    }
+                }
+                &__img {
+                    max-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@include media-min(1024px) {
+    .footer {
+        margin-top: 50px;
+        padding: 50px 0;
+        &-logo {
+            @include worksans (18px);
+        }
+        &-elem {
+            @include worksans (48px);
+            margin: 25px 0 45px;
+        }
+        &-text {
+            @include worksans (14px);
+            margin: 50px 0;
+        }
+        &-links {
+            &__item {
+                &+& {
+                    margin-left: 70px;
+                }
+            }
+            &__img {
+                max-height: 35px;
+            }
+        }
+    }
+}

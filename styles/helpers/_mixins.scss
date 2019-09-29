@@ -1,0 +1,18 @@
+@mixin worksans ($size, $type: 'WorkSans-semibold', $line: normal) {
+    font-size: $size;
+    line-height: $line;
+    font-family: $type, sans-serif;
+    font-style: normal;
+}
+
+@mixin media-max($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin media-min($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}

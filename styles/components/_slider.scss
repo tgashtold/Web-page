@@ -1,0 +1,87 @@
+.swiper-container {
+    display: none;
+}
+
+@include media-min(768px) {
+    .slider {
+        width: 100%;
+        &-wrapper {
+            margin-top: 50px;
+            width: 100%;
+        }
+        &-window {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__image {
+            &-wrapper {
+                max-width: 50%;
+            }
+            width: 100%;
+        }
+        &-info {
+            max-width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 50px;
+        }
+        &-head {
+            width: 100%;
+            color: $blue;
+            @include worksans (35px);
+        }
+        &-description {
+            width: 100%;
+            color: $grey;
+            @include worksans (14px, 'WorkSans-regular');
+            margin: 40px 0;
+        }
+        &-box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            align-self: center;
+        }
+        &-btn {
+            margin-right: 30px;
+        }
+        &-link {
+            color: $blue;
+            transition: .3s;
+            @include worksans (14px);
+            margin-top: 15px;
+            &:hover {
+                color: $red;
+                transition: .3s;
+            }
+        }
+    }
+    .swiper-container {
+        display: block;
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+@include media-min(1024px) {
+    .slider {
+        &-head {
+            @include worksans (73px);
+        }
+        &-description {
+            @include worksans (18px, 'WorkSans-regular');
+        }
+        &-box {
+            flex-direction: row;
+            align-self: flex-start;
+        }
+        &-link {
+            @include worksans (18px);
+            margin-top: 0;
+        }
+    }
+}

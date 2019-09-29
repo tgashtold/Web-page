@@ -1,0 +1,94 @@
+.main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-top: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-head {
+        color: $blue;
+        @include worksans (23px);
+        align-self: center;
+    }
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    &-item {
+        background-color: $grey;
+        height: 280px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    &-button {
+        color: $red;
+        transition: .3s;
+        border: 0;
+        background-color: transparent;
+        @include worksans (12px);
+        margin-top: 15px;
+        &:hover {
+            opacity: .85;
+            transition: .3s;
+        }
+    }
+}
+
+@include media-min(768px) {
+    .main {
+        margin-top: 100px;
+    }
+    .gallery {
+        &-head {
+            @include worksans (48px);
+            @include worksans (30px);
+            align-self: flex-start;
+        }
+        &-wrapper {
+            margin-top: 30px;
+            margin-top: 0;
+        }
+        &-item {
+            width: 48%;
+            margin-top: 20px;
+        }
+        &-button {
+            @include worksans (14px);
+            margin-top: 55px;
+        }
+    }
+}
+
+@include media-min(1024px) {
+    .main {
+        margin-top: 150px;
+    }
+    .gallery {
+        &-head {
+            @include worksans (48px);
+        }
+        &-wrapper {
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
+        &-item {
+            width: 31%;
+            margin-top: 30px;
+            &:nth-of-type(3n+2) {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+        }
+        &-button {
+            @include worksans (18px);
+        }
+    }
+}
